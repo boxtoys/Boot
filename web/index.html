@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Boot - Quick setup toolkit for new developers</title>
+  <meta name="keywords" content="commands, apps" />
+  <meta name="description" content="Quick setup toolkit for new developers" />
+  <script src="assets/js/utils.js"></script>
+</head>
+<body>
+  <script>
+    (function() {
+      const token = localStorage.getItem('token')
+      const request = utils.request('GET', `/api/list?token=${token}`)
+
+      request[0].then(function(data) {
+        console.log(data)
+      }).catch(function(err) {
+        console.error(err)
+      })
+    })()
+  </script>
+</body>
+</html>

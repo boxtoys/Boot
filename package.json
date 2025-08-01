@@ -1,0 +1,24 @@
+{
+  "name": "boot",
+  "private": true,
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boxtoys/Boot.git"
+  },
+  "author": "2046",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boxtoys/Boot/issues"
+  },
+  "homepage": "https://github.com/boxtoys/Boot#readme",
+  "dependencies": {
+    "@vercel/node": "^5.3.8",
+    "googleapis": "^154.1.0",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "undici-types": "^7.13.0"
+  }
+}
