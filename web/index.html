@@ -47,7 +47,7 @@
     <a class="absolute top-0 right-0 md:block hidden" href="https://github.com/boxtoys/Boot" target="_blank">
       <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="size-full" />
     </a>
-    <div class="max-w-lg mx-auto py-6 px-4 h-[calc(100vh-1.5rem)]">
+    <div class="max-w-lg mx-auto py-6 px-4 min-h-[calc(100vh-1.5rem)]">
       <div class="mb-5 text-center">
         <h1 class="text-3xl font-bold mb-1 font-comfortaa">BootKit</h1>
         <p class="text-muted-foreground text-sm font-comfortaa">Quick setup toolkit for new developers</p>
@@ -59,16 +59,16 @@
       <div id="software-content" class="bg-white rounded-xl shadow-sm border border-border overflow-hidden hidden"></div>
       <div id="command-content" class="bg-white rounded-xl shadow-sm border border-border overflow-hidden hidden"></div>
     </div>
-    <div class="font-comfortaa text-center text-sm text-gray-500 text-xs">
+    <div class="font-comfortaa text-center text-sm text-gray-500 text-xs p-2">
       BootKit was created by <a href="https://github.com/2046" target="_blank" class="text-[#58a6ff] hover:text-[#58a6ff]/80">2046</a> © 2022 - 2025
     </div>
     <script type="text/template" id="softwareTemplate">
       <div class="flex items-center p-4 border-b border-border last:border-b-0 hover:bg-gray-50 transition-colors">
-        <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-200 flex items-center justify-center flex-shrink-0 mr-4">
+        <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm flex items-center justify-center flex-shrink-0 mr-4">
           <img class="{iconStyle}" src="{icon}" />
         </div>
         <div class="flex-1 min-w-0 mr-4">
-          <h3 class="font-semibold text-lg text-gray-900 mb-1">{name}</h3>
+          <h3 class="font-semibold text-lg text-gray-900 mb-1 text-ellipsis overflow-hidden whitespace-nowrap">{name}</h3>
           <a href="{website}" target="_blank" class="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800">
             <span>Website</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,11 +82,11 @@
     </script>
     <script type="text/template" id="commandTemplate">
       <div class="flex items-center p-4 border-b border-border last:border-b-0 hover:bg-gray-50 transition-colors">
-        <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-200 flex items-center justify-center flex-shrink-0 mr-4">
+        <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm flex items-center justify-center flex-shrink-0 mr-4">
           <img class="{iconStyle}" src="{icon}" />
         </div>
         <div class="flex-1 min-w-0 mr-4">
-          <h3 class="font-semibold text-lg text-gray-900 mb-1">{name}</h3>
+          <h3 class="font-semibold text-lg text-gray-900 mb-1 text-ellipsis overflow-hidden whitespace-nowrap">{name}</h3>
           <div class="text-sm text-gray-500 text-ellipsis overflow-hidden whitespace-nowrap">{desc}</div>
         </div>
         <button class="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm font-medium min-w-[80px]" data-name="{name}">COPY</button>
