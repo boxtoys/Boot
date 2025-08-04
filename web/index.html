@@ -3,21 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Boot - Quick setup toolkit for new developers</title>
     <meta name="keywords" content="commands, apps" />
     <meta name="description" content="Quick setup toolkit for new developers" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="assets/js/utils.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/utils.js" inline></script>
     <script>
       tailwind.config = {
         theme: {
@@ -51,7 +45,7 @@
   </head>
   <body class="bg-gray-50 text-foreground">
     <a class="absolute top-0 right-0 md:block hidden" href="https://github.com/boxtoys/Boot" target="_blank">
-      <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1">
+      <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="size-full" />
     </a>
     <div class="max-w-lg mx-auto py-6 px-4 h-[calc(100vh-1.5rem)]">
       <div class="mb-5 text-center">
@@ -62,97 +56,43 @@
         <button id="software-tab" class="flex-1 px-6 py-2 rounded-md text-sm font-medium transition-colors text-gray-600 hover:text-gray-900 bg-white text-gray-900">Softwares</button>
         <button id="command-tab" class="flex-1 px-6 py-2 rounded-md text-sm font-medium transition-colors text-gray-600 hover:text-gray-900">Commands</button>
       </div>
-      <div id="software-content" class="bg-white rounded-xl shadow-sm border border-border overflow-hidden">
-        <div class="flex items-center p-4 border-b border-border last:border-b-0 hover:bg-gray-50 transition-colors">
-          <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-200 flex items-center justify-center flex-shrink-0 mr-4">
-            <img src="https://placehold.co/400" />
-          </div>
-          <div class="flex-1 min-w-0 mr-4">
-            <h3 class="font-semibold text-lg text-gray-900 mb-1">Google Chrome</h3>
-            <a href="https://google.com" target="_blank" class="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800">
-              <span>Website</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-              </svg>
-            </a>
-          </div>
-          <button class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors text-sm font-medium min-w-[80px]">GET</button>
-        </div>
-        <div class="flex items-center p-4 border-b border-border last:border-b-0 hover:bg-gray-50 transition-colors">
-          <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-200 flex items-center justify-center flex-shrink-0 mr-4">
-            <img src="https://placehold.co/400" />
-          </div>
-          <div class="flex-1 min-w-0 mr-4">
-            <h3 class="font-semibold text-lg text-gray-900 mb-1">Google Chrome</h3>
-            <a href="https://google.com" target="_blank" class="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800">
-              <span>Website</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-              </svg>
-            </a>
-          </div>
-          <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors text-sm font-medium min-w-[80px]">OPEN</button>
-        </div>
-      </div>
-      <div id="command-content" class="bg-white rounded-xl shadow-sm border border-border overflow-hidden hidden">
-        <div class="flex items-center p-4 border-b border-border last:border-b-0 hover:bg-gray-50 transition-colors">
-          <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-200 flex items-center justify-center flex-shrink-0 mr-4">
-            <img src="https://placehold.co/400" />
-          </div>
-          <div class="flex-1 min-w-0 mr-4">
-            <h3 class="font-semibold text-lg text-gray-900 mb-1">Install Node.js</h3>
-            <div class="text-sm text-gray-500 text-ellipsis overflow-hidden whitespace-nowrap">Run JavaScript Everywhere</div>
-          </div>
-          <button class="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm font-medium min-w-[80px]">COPY</button>
-        </div>
-        <div class="flex items-center p-4 border-b border-border last:border-b-0 hover:bg-gray-50 transition-colors">
-          <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-200 flex items-center justify-center flex-shrink-0 mr-4">
-            <img src="https://placehold.co/400" />
-          </div>
-          <div class="flex-1 min-w-0 mr-4">
-            <h3 class="font-semibold text-lg text-gray-900 mb-1">Install Node.js</h3>
-            <div class="text-sm text-gray-500 text-ellipsis overflow-hidden whitespace-nowrap">Run JavaScript Everywhere</div>
-          </div>
-          <button class="px-6 py-2 text-white rounded-full bg-green-800 transition-colors text-sm font-medium min-w-[80px]">DONE</button>
-        </div>
-      </div>
+      <div id="software-content" class="bg-white rounded-xl shadow-sm border border-border overflow-hidden hidden"></div>
+      <div id="command-content" class="bg-white rounded-xl shadow-sm border border-border overflow-hidden hidden"></div>
     </div>
-    <div class="font-comfortaa text-center text-sm text-gray-500 text-xs">BootKit was created by <a href="https://github.com/2046" target="_blank" class="text-[#58a6ff] hover:text-[#58a6ff]/80">2046</a> © 2022 - 2025</div>
-    <script>
-      (function() {
-        const commandTab = document.getElementById('command-tab');
-        const softwareTab = document.getElementById('software-tab');
-        const commandContent = document.getElementById('command-content');
-        const softwareContent = document.getElementById('software-content');
-
-        softwareTab.addEventListener('pointerdown', function() {
-          softwareTab.classList.add('bg-white', 'text-gray-900');
-          commandTab.classList.remove('bg-white', 'text-gray-900');
-          commandContent.classList.add('hidden');
-          softwareContent.classList.remove('hidden');
-        });
-
-        commandTab.addEventListener('pointerdown', function() {
-          commandTab.classList.add('bg-white', 'text-gray-900');
-          softwareTab.classList.remove('bg-white', 'text-gray-900');
-          commandContent.classList.remove('hidden');
-          softwareContent.classList.add('hidden');
-        });
-      })();
+    <div class="font-comfortaa text-center text-sm text-gray-500 text-xs">
+      BootKit was created by <a href="https://github.com/2046" target="_blank" class="text-[#58a6ff] hover:text-[#58a6ff]/80">2046</a> © 2022 - 2025
+    </div>
+    <script type="text/template" id="softwareTemplate">
+      <div class="flex items-center p-4 border-b border-border last:border-b-0 hover:bg-gray-50 transition-colors">
+        <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-200 flex items-center justify-center flex-shrink-0 mr-4">
+          <img class="w-10 h-10 object-cover" src="{icon}" />
+        </div>
+        <div class="flex-1 min-w-0 mr-4">
+          <h3 class="font-semibold text-lg text-gray-900 mb-1">{name}</h3>
+          <a href="{website}" target="_blank" class="flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800">
+            <span>Website</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+        <button class="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors text-sm font-medium min-w-[80px]" data-name="{name}">GET</button>
+        <button class="px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition-colors text-sm font-medium min-w-[80px] hidden">OPEN</button>
+      </div>
     </script>
-    <script>
-      (function () {
-        const token = localStorage.getItem("token");
-        const request = utils.request("GET", `/api/list?token=${token}`);
-
-        request[0]
-          .then(function (data) {
-            console.log(data);
-          })
-          .catch(function (err) {
-            console.error(err);
-          });
-      })();
+    <script type="text/template" id="commandTemplate">
+      <div class="flex items-center p-4 border-b border-border last:border-b-0 hover:bg-gray-50 transition-colors">
+        <div class="w-16 h-16 rounded-2xl overflow-hidden bg-white shadow-sm border border-gray-200 flex items-center justify-center flex-shrink-0 mr-4">
+          <img class="w-10 h-10 object-cover" src="{icon}" />
+        </div>
+        <div class="flex-1 min-w-0 mr-4">
+          <h3 class="font-semibold text-lg text-gray-900 mb-1">{name}</h3>
+          <div class="text-sm text-gray-500 text-ellipsis overflow-hidden whitespace-nowrap">{desc}</div>
+        </div>
+        <button class="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm font-medium min-w-[80px]" data-name="{name}">COPY</button>
+        <button class="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm font-medium min-w-[80px] hidden">DONE</button>
+      </div>
     </script>
+    <script src="assets/js/app.js" inline></script>
   </body>
 </html>
