@@ -15,38 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/js/utils.js" inline></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              comfortaa: ["Comfortaa", "cursive"],
-            },
-            colors: {
-              border: "hsl(214.3 31.8% 91.4%)",
-              input: "hsl(214.3 31.8% 91.4%)",
-              ring: "hsl(222.2 84% 4.9%)",
-              background: "hsl(0 0% 100%)",
-              foreground: "hsl(222.2 84% 4.9%)",
-              primary: {
-                DEFAULT: "hsl(222.2 47.4% 11.2%)",
-                foreground: "hsl(210 40% 98%)",
-              },
-              secondary: {
-                DEFAULT: "hsl(210 40% 96%)",
-                foreground: "hsl(222.2 84% 4.9%)",
-              },
-              muted: {
-                DEFAULT: "hsl(210 40% 96%)",
-                foreground: "hsl(215.4 16.3% 46.9%)",
-              },
-            },
-          },
-        },
-      };
-    </script>
+    <link rel="stylesheet" href="assets/css/tailwind.css" inline>
   </head>
   <body class="bg-gray-50 text-foreground">
     <a class="absolute top-0 right-0 md:block hidden" href="https://github.com/boxtoys/Boot" target="_blank">
@@ -98,6 +67,7 @@
         <button class="px-6 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors text-sm font-medium min-w-[80px] hidden">DONE</button>
       </div>
     </script>
+    <script src="assets/js/utils.js" inline></script>
     <script src="assets/js/app.js" inline></script>
   </body>
 </html>
