@@ -65,6 +65,7 @@
         var template = softwareTemplate.replace("{icon}", item.icon);
         template = template.replace(/\{name\}/g, item.name);
         template = template.replace("{website}", item.website);
+        template = template.replace("{iconStyle}", item.round === 0 ? 'w-10 h-10 object-cover' : 'w-full h-full');
 
         return template;
       })
@@ -84,6 +85,7 @@
         var template = commandTemplate.replace("{icon}", item.icon);
         template = template.replace(/\{name\}/g, item.name);
         template = template.replace("{desc}", item.desc);
+        template = template.replace("{iconStyle}", item.round === 0 ? 'w-10 h-10 object-cover' : 'w-full h-full');
 
         return template;
       })

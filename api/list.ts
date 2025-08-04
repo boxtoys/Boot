@@ -28,7 +28,8 @@ export default async (request: VercelRequest, response: VercelResponse) => {
         icon: row[2],
         path: row[3],
         website: row[5],
-        category: row[0]
+        category: row[0],
+        round: parseInt(row[6], 10)
       })) as any[]
 
       commandList = commandList.map(row => ({
@@ -38,6 +39,7 @@ export default async (request: VercelRequest, response: VercelResponse) => {
         command: row[4],
         website: row[5],
         category: row[0],
+        round: parseInt(row[6], 10)
       })) as any[]
 
       response.status(200).send([...softwareList, ...commandList])
