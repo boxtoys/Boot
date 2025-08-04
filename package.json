@@ -7,8 +7,7 @@
     "url": "git+https://github.com/boxtoys/Boot.git"
   },
   "scripts": {
-    "minify": "npx gulp minify",
-    "build:css": "npx gulp buildCSS"
+    "tasks": "npx gulp tasks"
   },
   "author": "2046",
   "license": "MIT",
