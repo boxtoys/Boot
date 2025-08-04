@@ -65,7 +65,10 @@
         var template = softwareTemplate.replace("{icon}", item.icon);
         template = template.replace(/\{name\}/g, item.name);
         template = template.replace("{website}", item.website);
-        template = template.replace("{iconStyle}", item.round === 0 ? 'w-10 h-10 object-cover' : 'w-full h-full');
+        template = template.replace(
+          "{iconStyle}",
+          item.round === 0 ? "w-10 h-10 object-cover" : "w-full h-full"
+        );
 
         return template;
       })
@@ -85,7 +88,10 @@
         var template = commandTemplate.replace("{icon}", item.icon);
         template = template.replace(/\{name\}/g, item.name);
         template = template.replace("{desc}", item.desc);
-        template = template.replace("{iconStyle}", item.round === 0 ? 'w-10 h-10 object-cover' : 'w-full h-full');
+        template = template.replace(
+          "{iconStyle}",
+          item.round === 0 ? "w-10 h-10 object-cover" : "w-full h-full"
+        );
 
         return template;
       })
@@ -120,15 +126,15 @@
         });
 
         if (item) {
-          navigator.clipboard.writeText(item.command);
+          navigator.clipboard.writeText(item.command).then(function () {
+            target.classList.add("hidden");
+            target.nextElementSibling.classList.remove("hidden");
 
-          target.classList.add("hidden");
-          target.nextElementSibling.classList.remove("hidden");
-
-          setTimeout(function () {
-            target.classList.remove("hidden");
-            target.nextElementSibling.classList.add("hidden");
-          }, 1000);
+            setTimeout(function () {
+              target.classList.remove("hidden");
+              target.nextElementSibling.classList.add("hidden");
+            }, 1000);
+          });
         }
       }
     });
