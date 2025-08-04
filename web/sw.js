@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v1754327253145";
+const CACHE_VERSION = "v1754327393001";
 const API_CACHE = "api-" + CACHE_VERSION;
 const FONT_CACHE = "fonts-" + CACHE_VERSION;
 const IMAGE_CACHE = "images-" + CACHE_VERSION;
