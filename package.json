@@ -1,10 +1,10 @@
 {
-  "name": "boot",
+  "name": "bootkit",
   "private": true,
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boxtoys/Boot.git"
+    "url": "git+https://github.com/boxtoys/BootKit.git"
   },
   "scripts": {
     "tasks": "npx gulp tasks"
@@ -12,9 +12,9 @@
   "author": "2046",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/boxtoys/Boot/issues"
+    "url": "https://github.com/boxtoys/BootKit/issues"
   },
-  "homepage": "https://github.com/boxtoys/Boot#readme",
+  "homepage": "https://github.com/boxtoys/BootKit#readme",
   "dependencies": {
     "@vercel/node": "^5.3.8",
     "googleapis": "^154.1.0",
